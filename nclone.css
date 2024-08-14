@@ -159,7 +159,7 @@ section.first > div :nth-child(1) {
   font-weight: 900;
 }
 
-section.first > div :nth-child(1) {
+section.first > div :nth-child(2) {
   font-size: 24px;
 }
 
@@ -200,7 +200,7 @@ section.first-third > div :nth-child(1) {
   font-weight: 900;
 }
 
-section.first-third > div :nth-child(1) {
+section.first-third > div :nth-child(2) {
   font-size: 24px;
 }
 
@@ -286,4 +286,45 @@ footer .ques {
   font-size: 14px;
   color: white;
   text-underline-position: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .first{
+    flex-wrap: wrap;
+  }
+
+  .first-third{
+    flex-wrap: wrap;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+
+  .hero-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  section.first > div :nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  section.first > div :nth-child(2) {
+    font-size: 16px;
+  }
+
+  section.first-third > div :nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  section.first-third > div :nth-child(2) {
+    font-size: 16px;
+  }
 }
