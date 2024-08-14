@@ -327,4 +327,8 @@ footer .ques {
   section.first-third > div :nth-child(2) {
     font-size: 16px;
   }
+
+  nav{
+    width: 90vw;
+  }
 }
